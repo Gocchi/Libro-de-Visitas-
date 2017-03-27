@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>posicion</title>
+        <meta charset="utf=8">
+    </head>
+    <body>
+        <form id="Libro de Visitas"
+        <h1>Artículos</h1>
+           <ul>
+              <li type="none"  id="comentarioPublicado"></li>
+		  </ul>  
+
+       
+        <div id ="botones">
+            <button type="submit" id= "izquierda" value = "izquierdaTxt">Alinear a la izquierda</button>
+            <button type="submit" id= "centro" value = "centroTxt">Alinear al Centro</button>
+            <button type="submit" id= "derecha" value = "derechaTxt">Alinear a la Derecha</button>
+            <button type="submit" onclick="colorTexto()" value = "colorTxt">Color de Texto</button>
+            <button type="submit" onclick="fondoTexto()" value = "fondoTxt">Color de Fondo</button>
+            <button type="submit" onclick="tamañoTexto(chico)" value = "chicoTxt">Texto Chico</button>
+            <button type="submit" onclick="tamañoTexto(mediano)" value = "medianoTxt">Texto Mediano</button>
+            <button type="submit" onclick="tamañoTexto(grande)" value = "grandeTxt">Texto Grande</button>
+        </div>
+        
+        <textarea id= "caja de comentarios" oninput="preview()" rows="10" cols="100"></textarea>
+        
+       
+        <p id= "preview">Contenido</p>
+        </hr>
+
+        <div><input type="button"  value="Enviar" onclick="mostrar()"></div>
+        
+         <script src="Js/funcionesLibroV.js"></script>
+
+    </form>    
+    </body>
+</html>
