@@ -5,18 +5,18 @@
          <meta charset="utf=8">
     </head>
     <body>
-       <h1>Artículos</h1>
+       <h1>Libro de Visitas</h1>
         <article id="Libro de Visitas">
-            <section id= "comentariosAgregados">Comentarios</section>
+            <section id= "comentariosAgregados">Agrega tu comentario</section>
         </article>
 
         </hr>    
 
        
         <div id ="botones">
-            <button id= "izquierda">Alinear a la izquierda</button>
-            <button id= "centro">Alinear al Centro</button>
-            <button id= "derecha">Alinear a la Derecha</button>
+            <button onclick= "alinearIzquierda()">Alinear a la izquierda</button>
+            <button onclick= "alinearCentro()">Alinear al Centro</button>
+            <button onclick= "alinearDerecha()">Alinear a la Derecha</button>
             <button onclick="colorTexto()">Color de Texto</button>
             <button onclick="fondoTexto()">Color de Fondo</button>
             <button onclick="sizeChico()">Texto Chico</button>
@@ -27,7 +27,7 @@
         <textarea id= "caja de comentarios" oninput="preview()" rows="10" cols="100"></textarea>
         
        
-        <p id= "preview">Contenido</p>
+        <p id= "preview">Así se publicara tu Comentario</p>
         </hr>
 
         <div><input type="button"  value="Enviar" onclick="mostrar()"></div>

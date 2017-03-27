@@ -13,9 +13,16 @@ function mostrar(){
      nuevasPublicaciones.insertBefore(crearComentario, comentariosAgregados.firstChild);
 }
 
-function alinearTexto(){
-  var alinearTxt = document.getElementById("preview").style.textAlign;
-  preview.style.textAlign = alinearTxt;
+function alinearIzquierda(){
+  document.getElementById("preview").style.textAlign = "left";
+}
+
+function alinearCentro(){
+  document.getElementById("preview").style.textAlign = "center";
+}
+
+function alinearDerecha(){
+  document.getElementById("preview").style.textAlign = "right";
 }
 
 function colorTexto(){
