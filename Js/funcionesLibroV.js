@@ -6,11 +6,11 @@ function preview (){
 }
 
 function mostrar(){
-     var visualPreview = document.getElementById("preview").cloneNode(true);
-     var visualComentario = document.createElement("li");
-     var lista = document.createTextNode(visualPreview);
-     visualPreview.removeAttribute("id");
-     
+     var visualPreview = document.getElementById("preview");
+     var crearComentario = visualPreview.cloneNode(true);
+     crearComentario.removeAttribute("id");
+     var nuevasPublicaciones = document.getElementById("comentariosAgregados");
+     nuevasPublicaciones.insertBefore(crearComentario, comentariosAgregados.firstChild);
 }
 
 function alinearTexto(){
