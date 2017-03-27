@@ -6,18 +6,16 @@ function preview (){
 }
 
 function mostrar(){
-     var visualPreview = document.getElementById("preview").cloneNode();
+     var visualPreview = document.getElementById("preview").cloneNode(true);
      var visualComentario = document.createElement("li");
      var lista = document.createTextNode(visualPreview);
+     visualPreview.removeAttribute("id");
      
-    visualComentario.appendChild(lista);
-    comentarios.appendChild(visualComentario);
 }
 
-function alinearTexto{
-  var alinearTxt = document.getElementById("preview").style.textAlign;}
+function alinearTexto(){
+  var alinearTxt = document.getElementById("preview").style.textAlign;
   preview.style.textAlign = alinearTxt;
-
 }
 
 function colorTexto(){
@@ -30,11 +28,16 @@ function fondoTexto(){
   document.getElementById("preview").style.background = fondoTxt; 
 }
 
-function tamañoTexto (chico, mediano, grande){
-  var chico= document.getElementById("preview").style.fontSize = "small";
-  var mediano= document.getElementById("preview").style.fontSize = "medium";
-  var grande= document.getElementById("preview").style.fontSize = "x-large";
+function sizeChico(){
+  document.getElementById("preview").style.fontSize = "small";
 }
+function sizeMediano(){
+    document.getElementById("preview").style.fontSize = "medium";
+ }
+ function sizeGrande(){
+    document.getElementById("preview").style.fontSize = "x-large";
+ }
+
 
 
 
